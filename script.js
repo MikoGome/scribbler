@@ -64,7 +64,7 @@ function compile(width, height, image) {
       commands.push(command);
     }
   }
-  commands.sort((a,b) => a.color.id - b.color.id);
+  commands.sort((a,b) => b.color.id - a.color.id);
   return commands;
 }
 
